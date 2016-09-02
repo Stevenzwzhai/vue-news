@@ -55,7 +55,7 @@ function loaded() {
 		onScrollMove: function () {
 			if (this.y > 5 && !pullDownEl.className.match('flip')) {
 				pullDownEl.className = 'flip';
-				pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新';
+				pullDownEl.querySelector('.pullDownLabel').innerHTML = '释放立即刷新';
 				this.minScrollY = 0;
 			} else if (this.y < 5 && pullDownEl.className.match('flip')) {
 				pullDownEl.className = '';

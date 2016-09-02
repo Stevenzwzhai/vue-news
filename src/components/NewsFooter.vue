@@ -30,11 +30,31 @@
 	export default {
 		data () {
 			return {
+                flag: false,
+                tabbarClass: {
+                    'weui_tabbar_item': true,
+                    'weui_bar_item_on': this.flag
+                },
 				msg: '123'
 			}
-		}
+		},
+        methods () {
+            return {
+                changeTabbar: function(){
+                    this.flag = !this.flag;
+                }
+            }
+        }
 	}
 </script>
-<style>
-	
+<style lang="less">
+	.a{
+        background: red;
+        .b{
+            background: blue;
+        }
+        .c{
+            color: green;
+        }
+    }
 </style>
